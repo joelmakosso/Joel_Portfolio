@@ -158,3 +158,71 @@ document.querySelectorAll("[data-filter-group]").forEach((group) => {
 
 setHeaderState();
 window.addEventListener("scroll", setHeaderState, { passive: true });
+
+
+// Contenus protégés — © Joël Makosso. Reproduction interdite.
+const protectedMessage = "Contenu protégé — © Joël Makosso";
+let protectionToastTimer;
+
+function showProtectionMessage() {
+  let toast = document.querySelector("[data-protection-toast]");
+
+  if (!toast) {
+    toast = document.createElement("div");
+    toast.className = "protection-toast";
+    toast.dataset.protectionToast = "";
+    toast.setAttribute("role", "status");
+    toast.setAttribute("aria-live", "polite");
+    document.body.appendChild(toast);
+  }
+
+  toast.textContent = protectedMessage;
+  toast.classList.add("is-visible");
+  clearTimeout(protectionToastTimer);
+  protectionToastTimer = window.setTimeout(() => {
+    toast.classList.remove("is-visible");
+  }, 1800);
+}
+
+function blockProtectedAction(event) {
+  event.preventDefault();
+  showProtectionMessage();
+}
+
+try {
+  if (window.top !== window.self) {
+    window.top.location = window.self.location.href;
+  }
+} catch (error) {
+  document.documentElement.classList.add("is-framed");
+}
+
+document.addEventListener("contextmenu", blockProtectedAction);
+
+document.addEventListener("dragstart", (event) => {
+  if (event.target.closest("img, video, .thumbnail-card, .project-card, .case-video-card, .lab-card, .doc-card")) {
+    blockProtectedAction(event);
+  }
+});
+
+document.addEventListener("selectstart", (event) => {
+  if (event.target.closest(".projects, .case-section, .thumbnails-section, .writing-preparation-section, .writing-preview, .thumbnail-card, .doc-card, .case-video-card, .lab-card, .project-card, .process-details")) {
+    blockProtectedAction(event);
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  const key = event.key.toLowerCase();
+  const blocked =
+    event.key === "F12" ||
+    ((event.ctrlKey || event.metaKey) && ["s", "u", "c", "a", "p"].includes(key)) ||
+    ((event.ctrlKey || event.metaKey) && event.shiftKey && key === "i");
+
+  if (blocked) {
+    blockProtectedAction(event);
+  }
+});
+
+document.querySelectorAll("img, video").forEach((media) => {
+  media.setAttribute("draggable", "false");
+});

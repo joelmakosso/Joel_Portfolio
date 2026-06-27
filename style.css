@@ -1974,3 +1974,84 @@ h3 {
     left: -30px;
   }
 }
+
+
+/* Contenus protégés — © Joël Makosso. Reproduction interdite. */
+.projects,
+.case-section,
+.thumbnails-section,
+.writing-preparation-section,
+.writing-preview,
+.thumbnail-card,
+.doc-card,
+.case-video-card,
+.lab-card,
+.project-card,
+.process-details {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.media-shell,
+.project-media,
+.case-hero-media,
+.case-video-media,
+.lab-media,
+.thumbnail-media,
+.thumbnail-preview-media,
+.home-thumbnail-mosaic {
+  position: relative;
+}
+
+.media-shell:has(video)::after,
+.project-media:has(video)::after,
+.case-hero-media:has(video)::after,
+.case-video-media:has(video)::after,
+.lab-media:has(video)::after,
+.thumbnail-media:has(img)::after,
+.thumbnail-preview-media::after,
+.home-thumbnail-mosaic::after {
+  content: "© Joël Makosso";
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  z-index: 5;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(5, 8, 14, 0.42);
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  pointer-events: none;
+  backdrop-filter: blur(8px);
+}
+
+.protection-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  z-index: 9999;
+  max-width: min(90vw, 360px);
+  transform: translate(-50%, 14px);
+  padding: 10px 14px;
+  border: 1px solid rgba(216, 183, 104, 0.34);
+  border-radius: 999px;
+  background: rgba(5, 8, 14, 0.86);
+  color: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.32);
+  font-size: 0.84rem;
+  font-weight: 800;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.protection-toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.is-framed body {
+  display: none;
+}
