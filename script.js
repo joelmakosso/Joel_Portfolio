@@ -124,16 +124,61 @@ function applyVideoRatioClass(media, video) {
   }
 }
 
+function showVideoFallback(media) {
+  const placeholder = media.querySelector(".video-placeholder");
+
+  media.classList.remove("has-video", "video-landscape", "video-portrait", "video-square");
+
+  if (placeholder) {
+    placeholder.textContent = "Vidéo bientôt disponible";
+  }
+}
+
+function revealVideoPlayer(media) {
+  const placeholder = media.querySelector(".video-placeholder");
+
+  if (!placeholder) return;
+
+  if (placeholder.textContent.trim() === "Chargement de la vidéo") {
+    media.classList.add("has-video");
+  }
+}
+
 document.querySelectorAll(".media-shell, .project-media, .case-hero-media, .case-video-media, .lab-media").forEach((media) => {
   const video = media.querySelector("video");
+  const source = video?.querySelector("source");
 
   if (!video) return;
 
+  if (source?.getAttribute("src")) {
+    revealVideoPlayer(media);
+  }
+
+  const fallbackTimer = window.setTimeout(() => {
+    const placeholder = media.querySelector(".video-placeholder");
+
+    if (placeholder && placeholder.textContent.trim() === "Chargement de la vidéo" && !media.classList.contains("has-video")) {
+      showVideoFallback(media);
+    }
+  }, 2000);
+
   video.addEventListener("loadedmetadata", () => {
+    window.clearTimeout(fallbackTimer);
     applyVideoRatioClass(media, video);
   });
 
+  video.addEventListener("canplay", () => {
+    window.clearTimeout(fallbackTimer);
+    media.classList.add("has-video");
+  });
+
+  video.addEventListener("error", () => {
+    window.clearTimeout(fallbackTimer);
+    showVideoFallback(media);
+  });
+
   if (video.readyState >= 1) {
+    window.clearTimeout(fallbackTimer);
     applyVideoRatioClass(media, video);
   }
 });
