@@ -1,0 +1,12 @@
+.vscode/
+.codex/
+.agents/
+joel-portfolio/
+.DS_Store
+Thumbs.db
+*.log
+assets/videos/*.mp4
+assets/videos/*.mov
+assets/videos/*.avi
+assets/videos/*.mkv
+!assets/videos_web/*.mp4

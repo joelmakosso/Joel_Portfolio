@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Joël Makosso, monteur vidéo, créateur de contenu, storyteller et étudiant en audiovisuel spécialisé dans les formats courts, le montage et la création de contenus digitaux."
+    />
+    <title>Joël Makosso | Monteur Vidéo & Créateur de Contenu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- MODIFIER LES LIENS : changez les href des menus et boutons ici. -->
+    <header class="site-header" data-header>
+      <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
+        <span class="brand-mark">JM</span>
+        <span>Joël Makosso</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" data-nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#qui-suis-je">Qui suis-je</a>
+        <a href="#a-propos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="writing.html">Écriture</a>
+        <a href="thumbnails.html">Miniatures</a>
+        <a href="#experiences">Expériences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="accueil">
+        <!-- MODIFIER L'IMAGE HERO : remplacez assets/images/hero-studio.png par votre visuel. -->
+        <div class="hero-bg" aria-hidden="true">
+          <img src="assets/images/hero-studio.png" alt="" />
+        </div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Portfolio audiovisuel</p>
+            <!-- MODIFIER LE TEXTE HERO : nom, métier et accroche principale. -->
+            <h1>JOËL MAKOSSO</h1>
+            <p class="hero-role">Créateur de contenu vidéo • Monteur vidéo • Vidéaste social media</p>
+            <p class="hero-text">
+              Je conçois, filme et monte des contenus qui captent l’attention, racontent une histoire et renforcent la
+              visibilité des marques.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projets">Voir mes projets</a>
+              <a class="btn btn-secondary" href="#contact">Me contacter</a>
+            </div>
+          </div>
+
+          <div class="hero-media reveal">
+            <div class="media-shell">
+              <div class="media-label">
+                <span></span>
+                Showreel à venir
+              </div>
+              <!-- MODIFIER LA VIDEO HERO : ajoutez votre showreel dans assets/videos_web/showreel.mp4. -->
+              <video controls preload="metadata" poster="assets/images/hero-studio.png">
+                <source src="assets/videos_web/showreel.mp4" type="video/mp4" />
+                Votre navigateur ne peut pas lire cette vidéo.
+              </video>
+              <p class="showreel-note">
+                Actuellement en cours de production. Cette bande démo regroupera mes projets de tournage, montage,
+                motion design, storytelling et création de contenus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro" id="qui-suis-je">
+        <div class="container split">
+          <div class="section-kicker reveal">
+            <p class="eyebrow">Qui suis-je </p>
+            <h2>Un profil créatif entre cinéma, storytelling et réseaux sociaux.</h2>
+          </div>
+          <!-- MODIFIER LE TEXTE : présentation courte. -->
+          <p class="lead reveal">
+            Je suis Joël Makosso, créateur de contenu et étudiant en Bachelor Montage Vidéo & VFX. Mon univers vient du
+            cinéma, du storytelling et des réseaux sociaux. J’aime transformer une idée en contenu visuel fort, qu’il
+            s’agisse d’un Reel, d’une interview, d’un podcast, d’une vidéo pédagogique ou d’un format court pensé pour
+            performer.
+          </p>
+        </div>
+      </section>
+
+      <section class="impact-strip" aria-label="Chiffres clés">
+        <div class="container impact-grid">
+          <article class="impact-card reveal">
+            <strong data-count="2.5">2,5M+</strong>
+            <span>vues générées pour Hype Concept</span>
+          </article>
+          <article class="impact-card reveal">
+            <strong data-count="2.1">2,1M+</strong>
+            <span>vues générées pour Dangelove Paris</span>
+          </article>
+          <article class="impact-card reveal">
+            <strong data-count="1900">+1 900</strong>
+            <span>abonnés développés sur Dangelove Paris</span>
+          </article>
+          <article class="impact-card reveal">
+            <strong>Plusieurs</strong>
+            <span>formats éditoriaux développés chez Airparif</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about" id="a-propos">
+        <div class="container about-grid">
+          <div class="about-panel reveal">
+            <p class="eyebrow">À propos de moi</p>
+            <!-- MODIFIER LE TEXTE : présentation professionnelle. -->
+            <h2>De l’idée à la diffusion, avec une attention forte au rythme et à l’impact.</h2>
+            <p>
+              Mon profil se situe entre la création audiovisuelle, le montage vidéo et la stratégie social media. Je
+              travaille sur toute la chaîne de production : recherche, concept, écriture, tournage, dérushage, montage,
+              sound design, sous-titrage, motion design léger et diffusion multi-plateformes.
+            </p>
+            <p>
+              Je suis à l’aise avec les formats courts TikTok, Instagram Reels, YouTube Shorts, mais aussi avec des
+              formats plus longs comme les interviews, podcasts et vidéos YouTube.
+            </p>
+          </div>
+
+          <div class="stats reveal" aria-label="Repères clés">
+            <div>
+              <strong>2+</strong>
+              <span>contenus vidéo / mois chez Airparif</span>
+            </div>
+            <div>
+              <strong>5</strong>
+              <span>univers de projets présentés</span>
+            </div>
+            <div>
+              <strong>2023</strong>
+              <span>début du contenu cinéma & storytelling</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills" id="competences">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Compétences</p>
+            <h2>Une boîte à outils pensée pour produire vite, proprement et avec intention.</h2>
+          </div>
+
+          <!-- MODIFIER LES COMPETENCES : ajoutez ou retirez les puces dans chaque carte. -->
+          <div class="card-grid">
+            <article class="skill-card reveal">
+              <h3>Production vidéo</h3>
+              <ul>
+                <li>Cadrage</li>
+                <li>Lumière</li>
+                <li>Prise de son</li>
+                <li>Tournage</li>
+                <li>Interview</li>
+                <li>Captation événementielle</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Post-production</h3>
+              <ul>
+                <li>Montage vidéo</li>
+                <li>DaVinci Resolve</li>
+                <li>Premiere Pro</li>
+                <li>After Effects</li>
+                <li>CapCut Pro</li>
+                <li>Sound design</li>
+                <li>Sous-titrage dynamique</li>
+                <li>Étalonnage</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Social Media</h3>
+              <ul>
+                <li>TikTok</li>
+                <li>Instagram Reels</li>
+                <li>YouTube Shorts</li>
+                <li>Hooks</li>
+                <li>Rétention</li>
+                <li>Veille tendances</li>
+                <li>Storytelling court</li>
+                <li>Adaptation multi-plateformes</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Création & stratégie</h3>
+              <ul>
+                <li>Concept vidéo</li>
+                <li>Script</li>
+                <li>Storytelling</li>
+                <li>Direction artistique</li>
+                <li>Calendrier éditorial</li>
+                <li>Analyse des performances</li>
+                <li>IA appliquée à la création</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projets">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Projets / Études de cas</p>
+            <h2>Des contenus pensés pour informer, valoriser, engager et retenir.</h2>
+          </div>
+
+          <!-- MODIFIER LES PROJETS : textes, rôles, résultats et chemins vidéo dans les cartes ci-dessous. -->
+          <div class="project-list">
+            <article class="project-card reveal">
+              <div class="project-media">
+                <video controls preload="metadata">
+                  <source src="assets/videos_web/airparif-02.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/airparif-02.mp4</div>
+              </div>
+              <div class="project-content">
+                <span class="project-tag">Airparif</span>
+                <h3>Airparif – Vidéos pédagogiques & stratégie social media</h3>
+                <p>
+                  Création de concepts vidéo pour vulgariser des sujets liés à la qualité de l’air. Recherche
+                  documentaire, écriture de scripts, tournage, montage, formats pédagogiques, actualités et préparation
+                  d’un format interview/podcast dans l’ADN d’Airparif.
+                </p>
+                <dl>
+                  <div>
+                    <dt>Rôle</dt>
+                    <dd>Concept, script, tournage, montage, sound design, adaptation réseaux sociaux.</dd>
+                  </div>
+                  <div>
+                    <dt>Résultats</dt>
+                    <dd>
+                      Communauté Instagram passée de 920 à 1 025 abonnés en 2 mois avec un rythme de 2 contenus vidéo
+                      par mois. Contribution à l’augmentation de la visibilité et du trafic vers le site web.
+                    </dd>
+                  </div>
+                </dl>
+                <a class="btn project-link" href="projects/airparif.html">Voir l’étude de cas</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-media">
+                <video controls preload="metadata">
+                  <source src="assets/videos_web/hypeconcept.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/hypeconcept.mp4</div>
+              </div>
+              <div class="project-content">
+                <span class="project-tag">Beauté</span>
+                <h3>Hype Concept & BBBeauty – Contenus beauté & lancement social media</h3>
+                <p>
+                  Création de contenus promotionnels pour valoriser les prestations et l’univers d’instituts de beauté.
+                  Travail sur la stratégie de contenu, les tournages, le cadrage, la lumière et le montage.
+                </p>
+                <dl>
+                  <div>
+                    <dt>Rôle</dt>
+                    <dd>Stratégie vidéo, tournage, montage, formats courts, mise en valeur des services.</dd>
+                  </div>
+                </dl>
+                <a class="btn project-link" href="projects/hype-concept.html">Voir l’étude de cas</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-media">
+                <video controls preload="metadata">
+                  <source src="assets/videos_web/dangelove.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/dangelove.mp4</div>
+              </div>
+              <div class="project-content">
+                <span class="project-tag">Podcast</span>
+                <h3>Dangelove Paris – Montage formats courts podcast</h3>
+                <p>
+                  Montage de vidéos courtes optimisées pour les réseaux sociaux à partir de contenus podcast. Travail
+                  sur le rythme, les hooks, les cuts, les sous-titres et la rétention.
+                </p>
+                <dl>
+                  <div>
+                    <dt>Rôle</dt>
+                    <dd>Dérushage, montage, storytelling podcast, formats courts TikTok/Reels.</dd>
+                  </div>
+                </dl>
+                <a class="btn project-link" href="projects/dangelove-paris.html">Voir l’étude de cas</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-media">
+                <video controls preload="metadata">
+                  <source src="assets/videos_web/aecf.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/aecf.mp4</div>
+              </div>
+              <div class="project-content">
+                <span class="project-tag">Associatif</span>
+                <h3>AECF – Captation associative & documentaire</h3>
+                <p>
+                  Captation d’événements, montage et création de contenus pour la communication associative, avec un
+                  travail autour du cadrage, de la prise de son et du montage narratif.
+                </p>
+                <a class="btn project-link" href="projects/aecf.html">Voir l’étude de cas</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-media project-illustration-media">
+                <div class="project-static-visual" aria-hidden="true">
+                  <div class="static-visual-frame">
+                    <span>Cr?ations personnelles & scolaires</span>
+                    <strong>Motion design ? Montage ? Sound design ? Storytelling ? Cin?ma</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <span class="project-tag">Cinéma</span>
+                <h3>Projets personnels & scolaires – Création, exercices & expérimentations</h3>
+                <p>
+                  Créations personnelles, exercices d’école et expérimentations techniques autour du motion design, du
+                  montage, du sound design, du cinéma et du storytelling.
+                </p>
+                <a class="btn project-link" href="projects/projets-personnels-scolaires.html">Voir l’étude de cas</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-media thumbnail-preview-media">
+                <div class="home-thumbnail-mosaic" aria-hidden="true">
+                  <img src="assets/images/thumbnails/ginny-georgia.jpeg" alt="" loading="lazy" onerror="this.remove()" />
+                  <img src="assets/images/thumbnails/lamour-ouf.jpeg" alt="" loading="lazy" onerror="this.remove()" />
+                  <img src="assets/images/thumbnails/metier-air-juliette-vertical.png" alt="" loading="lazy" onerror="this.remove()" />
+                  <img src="assets/images/thumbnails/une-question-une-reponse-pollution-air.png" alt="" loading="lazy" onerror="this.remove()" />
+                  <img src="assets/images/thumbnails/after-chapitre-4.jpeg" alt="" loading="lazy" onerror="this.remove()" />
+                  <img src="assets/images/thumbnails/airparif-bilan-qualité-air-2025-horizontal.png" alt="" loading="lazy" onerror="this.remove()" />
+                </div>
+              </div>
+              <div class="project-content">
+                <span class="project-tag">Miniatures</span>
+                <h3>Miniatures & visuels social media</h3>
+                <p>
+                  Une sélection de miniatures et visuels créés pour Airparif, mes projets personnels et mes contenus
+                  social media.
+                </p>
+                <a class="btn project-link" href="thumbnails.html">Voir les miniatures</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section school-experiments">
+        <div class="container split">
+          <div class="section-kicker reveal">
+            <p class="eyebrow">Expérimentations scolaires & techniques</p>
+            <h2>Des exercices qui montrent l’apprentissage, la méthode et la progression.</h2>
+          </div>
+          <div class="reveal">
+            <p class="lead">
+              Ces projets montrent mon apprentissage technique : motion design, montage narratif, montage promotionnel,
+              sound design, compositing et animation. Chaque exercice m’a permis d’explorer une compétence précise et de
+              renforcer ma maîtrise de la production audiovisuelle.
+            </p>
+            <a class="btn project-link light-link" href="projects/projets-personnels-scolaires.html">
+              Explorer les projets scolaires
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section writing-preview" id="ecriture">
+        <div class="container writing-preview-grid">
+          <div class="reveal">
+            <p class="eyebrow">Scénariste & écriture</p>
+            <h2>Scripts, scénarios, voix off et documents de préparation.</h2>
+          </div>
+          <div class="writing-preview-card reveal">
+            <p>
+              Au-delà de la vidéo, je développe aussi une pratique d’écriture : scénarios de fiction, scripts
+              pédagogiques, textes de voix off, concepts de formats courts et documents préparatoires pour des tournages.
+              Cette partie rassemble mes écrits personnels, scolaires et professionnels.
+            </p>
+            <a class="btn btn-primary" href="writing.html">Découvrir mes écrits</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience" id="experiences">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Expériences</p>
+            <h2>Un parcours construit sur le terrain, entre projets pro, freelance et création personnelle.</h2>
+          </div>
+
+          <!-- MODIFIER LES EXPERIENCES : mettez à jour les intitulés et dates ici. -->
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <span>2026</span>
+              <h3>Airparif – Stage Montage / Communication audiovisuelle</h3>
+            </article>
+            <article class="timeline-item reveal">
+              <span>2025</span>
+              <h3>Dangelove Paris – Monteur vidéo freelance</h3>
+            </article>
+            <article class="timeline-item reveal">
+              <span>2024/2025</span>
+              <h3>Hype Concept / BBBeauty – Vidéaste & créateur de contenu</h3>
+            </article>
+            <article class="timeline-item reveal">
+              <span>2025</span>
+              <h3>AECF – Monteur / Cadreur bénévole</h3>
+            </article>
+            <article class="timeline-item reveal">
+              <span>Depuis déc. 2023</span>
+              <h3>Créateur de contenu cinéma & storytelling</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section method" id="methode">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Ma méthode</p>
+            <h2>Une approche simple : clarifier, produire, monter, optimiser.</h2>
+          </div>
+
+          <div class="method-grid">
+            <article class="method-step reveal">
+              <span>01</span>
+              <h3>Comprendre le sujet</h3>
+            </article>
+            <article class="method-step reveal">
+              <span>02</span>
+              <h3>Trouver le bon angle</h3>
+            </article>
+            <article class="method-step reveal">
+              <span>03</span>
+              <h3>Produire avec exigence</h3>
+            </article>
+            <article class="method-step reveal">
+              <span>04</span>
+              <h3>Monter pour capter et retenir</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container contact-grid">
+          <div class="reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Vous cherchez un alternant créatif, autonome et polyvalent </h2>
+            <p>
+              Vous cherchez un alternant créatif, autonome et polyvalent pour produire des vidéos qui ont du fond, du
+              rythme et de l’impact  Parlons-en.
+            </p>
+          </div>
+
+          <!-- MODIFIER LES CONTACTS : email, téléphone, Instagram et LinkedIn. -->
+          <address class="contact-card reveal">
+            <a href="mailto:baptisteisman@gmail.com"><i class="fa-solid fa-envelope"></i>baptisteisman@gmail.com</a>
+            <a href="tel:+33784649289"><i class="fa-solid fa-phone"></i>07 84 64 92 89</a>
+            <a href="https://www.linkedin.com/in/jo%C3%ABl-gis-makosso-3a0509335" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-linkedin-in"></i>Joel Makosso
+            </a>
+          </address>
+        </div>
+
+        <div class="container social-section reveal">
+          <div>
+            <p class="eyebrow">Retrouvez-moi sur</p>
+            <p>
+              Je partage mon travail entre création de contenu, cinéma, storytelling, montage vidéo et analyse
+              audiovisuelle.
+            </p>
+          </div>
+          <!-- MODIFIER LES RESEAUX : remplacez les href ci-dessous par vos liens sociaux. -->
+          <div class="social-links" aria-label="Réseaux sociaux de Joël Makosso">
+            <a href="https://www.instagram.com/joel.actingss" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a href="https://www.tiktok.com/@joelactings" target="_blank" rel="noreferrer" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+              <span>TikTok</span>
+            </a>
+            <a
+              class="is-featured"
+              href="https://youtube.com/@joel_actingssi=pTr36Lul8sRxcOHI"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="YouTube"
+            >
+              <i class="fa-brands fa-youtube"></i>
+              <span>YouTube</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jo%C3%ABl-gis-makosso-3a0509335"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <p>© 2026 Joël Makosso. Portfolio vidéo.</p>
+        <span>Création de contenu, cinéma, storytelling, montage vidéo et analyse audiovisuelle.</span>
+      </div>
+      <!-- MODIFIER LES RESEAUX FOOTER : gardez les mêmes liens que dans la section Contact. -->
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/joel.actingss" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@joelactings" target="_blank" rel="noreferrer" aria-label="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a
+          class="is-featured"
+          href="https://youtube.com/@joel_actingssi=pTr36Lul8sRxcOHI"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="YouTube"
+        >
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jo%C3%ABl-gis-makosso-3a0509335"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+      <a class="footer-top" href="#accueil">Retour en haut</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Projets personnels et scolaires de Joël Makosso : motion design, montage vidéo, sound design, cinéma et exercices techniques."
+    />
+    <title>Projets personnels & scolaires | Joël Makosso</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="../index.html#accueil" aria-label="Retour à l'accueil">
+        <span class="brand-mark">JM</span>
+        <span>Joël Makosso</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <a href="../index.html#accueil">Accueil</a>
+        <a href="../index.html#qui-suis-je">Qui suis-je</a>
+        <a href="../index.html#a-propos">À propos</a>
+        <a href="../index.html#competences">Compétences</a>
+        <a href="../index.html#projets">Projets</a>
+        <a href="../writing.html">Écriture</a>
+        <a href="../thumbnails.html">Miniatures</a>
+        <a href="../index.html#experiences">Expériences</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="case-page">
+      <section class="case-hero section">
+        <div class="container case-hero-grid">
+          <div class="reveal">
+            <a class="back-link" href="../index.html#projets">← Retour au portfolio</a>
+            <p class="eyebrow">Projets personnels & scolaires</p>
+            <h1>Créations, exercices d’école & expérimentations techniques</h1>
+            <p class="hero-text">
+              Une sélection de projets pour montrer ma progression en motion design, montage, sound design, cinéma et
+              narration visuelle.
+            </p>
+            <div class="case-badges">
+              <span>Motion Design</span>
+              <span>Montage vidéo</span>
+              <span>Sound Design</span>
+              <span>Projets cinéma</span>
+              <span>Exercices scolaires</span>
+            </div>
+          </div>
+          <div class="case-hero-media reveal">
+            <!-- MODIFIER LA VIDEO HERO : ajoutez une vidéo récap dans assets/videos. -->
+            <video controls preload="metadata" poster="../assets/images/hero-studio.png">
+              <source src="../assets/videos_web/acting-storytelling.mp4" type="video/mp4" />
+              Votre navigateur ne peut pas lire cette vidéo.
+            </video>
+            <div class="video-placeholder">assets/videos_web/acting-storytelling.mp4</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section case-section-light">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Filtrer les projets</p>
+            <h2>Parcourez les exercices par compétence ou par intention créative.</h2>
+          </div>
+
+          <!-- MODIFIER LES CATEGORIES : ajoutez un bouton data-filter et la même valeur dans data-categories. -->
+          <div class="filter-tabs reveal" data-filter-group>
+            <button class="is-active" type="button" data-filter="all">Tous</button>
+            <button type="button" data-filter="motion-design">Motion Design</button>
+            <button type="button" data-filter="montage-video">Montage vidéo</button>
+            <button type="button" data-filter="sound-design">Sound Design</button>
+            <button type="button" data-filter="projets-cinema">Projets cinéma</button>
+            <button type="button" data-filter="exercices-scolaires">Exercices scolaires</button>
+            <button type="button" data-filter="creations-personnelles">Créations personnelles</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section portfolio-lab">
+        <div class="container">
+          <!-- MODIFIER LES PROJETS : dupliquez une carte .lab-card et adaptez titre, catégories, vidéo et compétences. -->
+          <div class="lab-grid" data-filter-items>
+            <article class="lab-card reveal" data-categories="motion-design exercices-scolaires">
+              <div class="lab-media">
+                <video controls preload="metadata">
+                  <source src="../assets/videos_web/apple-casque.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/apple-casque.mp4</div>
+              </div>
+              <div class="lab-content">
+                <span class="project-tag">Motion Design / Exercice scolaire</span>
+                <h3>Reproduction publicité Apple</h3>
+                <p>
+                  Exercice de reproduction d’une publicité Apple autour d’un casque. Travail sur la précision du
+                  mouvement, le timing, l’habillage, les transitions et l’esthétique premium.
+                </p>
+                <div class="skill-tags">
+                  <span>After Effects</span><span>Animation</span><span>Direction artistique</span><span>Précision</span>
+                  <span>Motion design</span>
+                </div>
+                <details class="process-details">
+                  <summary>Voir le processus</summary>
+                  <dl>
+                    <dt>Contexte</dt><dd>Reproduction d’un univers publicitaire premium.</dd>
+                    <dt>Objectif</dt><dd>Travailler la précision du mouvement et l’esthétique produit.</dd>
+                    <dt>Mon rôle</dt><dd>Animation, transitions, rythme et habillage.</dd>
+                    <dt>Processus</dt><dd>Observation de la référence, découpage des mouvements, animation et ajustements.</dd>
+                    <dt>Ce que j’ai appris</dt><dd>La rigueur nécessaire pour obtenir un rendu premium crédible.</dd>
+                    <dt>Fichiers / vidéos associées</dt><dd>assets/videos_web/apple-casque.mp4</dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+
+            <article class="lab-card reveal" data-categories="motion-design exercices-scolaires">
+              <div class="lab-media">
+                <video controls preload="metadata">
+                  <source src="../assets/videos_web/chaton-ferme.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/chaton-ferme.mp4</div>
+              </div>
+              <div class="lab-content">
+                <span class="project-tag">Motion Design / Exercice scolaire</span>
+                <h3>Animation chaton & ferme</h3>
+                <p>
+                  Animation d’un petit chaton dans un décor de ferme. Travail sur la mise en mouvement, la caméra, la
+                  profondeur, le décor et la narration visuelle.
+                </p>
+                <div class="skill-tags">
+                  <span>After Effects</span><span>Animation caméra</span><span>Mise en scène</span><span>Profondeur</span>
+                  <span>Rythme</span>
+                </div>
+                <details class="process-details">
+                  <summary>Voir le processus</summary>
+                  <dl>
+                    <dt>Contexte</dt><dd>Exercice d’animation dans un décor illustré.</dd>
+                    <dt>Objectif</dt><dd>Créer un mouvement vivant et une petite narration visuelle.</dd>
+                    <dt>Mon rôle</dt><dd>Animation, caméra, gestion de la profondeur et rythme.</dd>
+                    <dt>Processus</dt><dd>Organisation du décor, animation des éléments, mouvement caméra et finition.</dd>
+                    <dt>Ce que j’ai appris</dt><dd>Comment donner de la profondeur à une scène simple.</dd>
+                    <dt>Fichiers / vidéos associées</dt><dd>assets/videos_web/chaton-ferme.mp4</dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+
+            <article class="lab-card reveal" data-categories="motion-design exercices-scolaires">
+              <div class="lab-media">
+                <video controls preload="metadata">
+                  <source src="../assets/videos_web/silhouette-after.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/silhouette-after.mp4</div>
+              </div>
+              <div class="lab-content">
+                <span class="project-tag">Motion Design / Exercice scolaire</span>
+                <h3>Silhouette animée</h3>
+                <p>
+                  Exercice sur fond blanc consistant à filmer une silhouette puis intégrer une image ou un univers visuel
+                  à l’intérieur du corps.
+                </p>
+                <div class="skill-tags">
+                  <span>After Effects</span><span>Masque</span><span>Compositing</span><span>Détourage</span>
+                  <span>Intégration visuelle</span>
+                </div>
+                <details class="process-details">
+                  <summary>Voir le processus</summary>
+                  <dl>
+                    <dt>Contexte</dt><dd>Exercice de compositing et de masque.</dd>
+                    <dt>Objectif</dt><dd>Intégrer un univers visuel dans une silhouette filmée.</dd>
+                    <dt>Mon rôle</dt><dd>Détourage, masque, compositing et intégration.</dd>
+                    <dt>Processus</dt><dd>Préparation du plan, création du masque, intégration visuelle et ajustements.</dd>
+                    <dt>Ce que j’ai appris</dt><dd>La précision nécessaire pour que le compositing reste propre.</dd>
+                    <dt>Fichiers / vidéos associées</dt><dd>assets/videos_web/silhouette-after.mp4</dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+
+
+
+            <article class="lab-card reveal" data-categories="motion-design exercices-scolaires">
+              <div class="lab-media">
+                <video controls preload="metadata">
+                  <source src="../assets/videos_web/generique-podcast-airparif.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vid?o.
+                </video>
+                <div class="video-placeholder">assets/videos_web/generique-podcast-airparif.mp4</div>
+              </div>
+              <div class="lab-content">
+                <span class="project-tag">Motion Design ? Branding ? Identit? visuelle</span>
+                <h3>G?n?rique d?interview / Podcast Airparif</h3>
+                <p>
+                  Dans le cadre de mon stage chez Airparif, j?ai imagin? et r?alis? un g?n?rique d?ouverture destin? ?
+                  une nouvelle s?rie d?interviews et de podcasts actuellement en d?veloppement.
+                </p>
+                <p>
+                  L?objectif ?tait de cr?er une identit? visuelle moderne, professionnelle et coh?rente avec l?image
+                  d?Airparif afin d?installer un v?ritable rendez-vous audiovisuel.
+                </p>
+                <div class="skill-tags">
+                  <span>Motion Design</span><span>Branding</span><span>After Effects</span><span>Identit? visuelle</span>
+                  <span>Direction artistique</span>
+                </div>
+                <details class="process-details">
+                  <summary>Voir le processus</summary>
+                  <dl>
+                    <dt>Contexte</dt><dd>Airparif souhaitait d?velopper un nouveau format d?interview/podcast permettant de donner la parole ? des experts, chercheurs et acteurs de la qualit? de l?air.</dd>
+                    <dt>Mon r?le</dt><dd>Recherche de r?f?rences visuelles, direction artistique, cr?ation du storyboard, animation sous After Effects, choix du rythme, synchronisation avec la musique et d?clinaison de l?identit? graphique.</dd>
+                    <dt>Processus cr?atif</dt><dd>Je me suis inspir? des codes des ?missions d?information, des podcasts et des interviews premium afin de concevoir une animation sobre, moderne et facilement identifiable.</dd>
+                    <dt>R?sultat</dt><dd>Le g?n?rique a ?t? tr?s bien accueilli par l??quipe Airparif, qui a particuli?rement appr?ci? la direction artistique et l?identit? visuelle propos?e pour ce nouveau format.</dd>
+                    <dt>Logiciels utilis?s</dt><dd>After Effects, Illustrator, Photoshop, DaVinci Resolve.</dd>
+                    <dt>Fichiers / vid?os associ?es</dt><dd>assets/videos_web/generique-podcast-airparif.mp4</dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+
+            <article class="lab-card reveal" data-categories="montage-video sound-design exercices-scolaires">
+              <div class="lab-media">
+                <video controls preload="metadata">
+                  <source src="../assets/videos_web/video-promo-humour.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/video-promo-humour.mp4</div>
+              </div>
+              <div class="lab-content">
+                <span class="project-tag">Montage vidéo / Exercice scolaire</span>
+                <h3>Vidéo promotionnelle humoristique</h3>
+                <p>
+                  Projet vidéo humoristique inspiré des vidéos de vente de formations en ligne. L’objectif était de
+                  détourner leurs codes avec une approche satirique et rythmée. J’ai pris en charge le montage.
+                </p>
+                <div class="skill-tags">
+                  <span>Montage vidéo</span><span>Rythme comique</span><span>Storytelling</span><span>Timing</span>
+                  <span>Sound design</span><span>Réseaux sociaux</span>
+                </div>
+                <details class="process-details">
+                  <summary>Voir le processus</summary>
+                  <dl>
+                    <dt>Contexte</dt><dd>Exercice de détournement humoristique des codes marketing.</dd>
+                    <dt>Objectif</dt><dd>Créer un montage drôle, dynamique et lisible.</dd>
+                    <dt>Mon rôle</dt><dd>Montage, rythme, timing comique et sound design.</dd>
+                    <dt>Processus</dt><dd>Sélection des prises, cuts, rythme, sons et finition.</dd>
+                    <dt>Ce que j’ai appris</dt><dd>Le timing est central pour faire fonctionner l’humour en vidéo.</dd>
+                    <dt>Fichiers / vidéos associées</dt><dd>assets/videos_web/video-promo-humour.mp4</dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+
+            <article class="lab-card reveal" data-categories="montage-video exercices-scolaires">
+              <div class="lab-media">
+                <video controls preload="metadata">
+                  <source src="../assets/videos_web/jungleland-narratif.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/jungleland-narratif.mp4</div>
+              </div>
+              <div class="lab-content">
+                <span class="project-tag">Montage vidéo / Exercice scolaire</span>
+                <h3>Jungleland – Montage narratif</h3>
+                <p>
+                  Montage réalisé à partir des rushes du film Jungleland fournis en cours. Travail sur la narration, la
+                  continuité, le rythme émotionnel et la construction d’une séquence cohérente.
+                </p>
+                <div class="skill-tags">
+                  <span>Montage narratif</span><span>Dérushage</span><span>Rythme</span><span>Continuité</span>
+                  <span>Storytelling</span>
+                </div>
+                <details class="process-details">
+                  <summary>Voir le processus</summary>
+                  <dl>
+                    <dt>Contexte</dt><dd>Montage narratif à partir de rushes imposés.</dd>
+                    <dt>Objectif</dt><dd>Construire une séquence claire et émotionnelle.</dd>
+                    <dt>Mon rôle</dt><dd>Dérushage, sélection, continuité et montage.</dd>
+                    <dt>Processus</dt><dd>Analyse des rushes, choix des axes, assemblage et affinage du rythme.</dd>
+                    <dt>Ce que j’ai appris</dt><dd>La continuité émotionnelle compte autant que la continuité visuelle.</dd>
+                    <dt>Fichiers / vidéos associées</dt><dd>assets/videos_web/jungleland-narratif.mp4</dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+
+            <article class="lab-card reveal" data-categories="montage-video sound-design exercices-scolaires">
+              <div class="lab-media">
+                <video controls preload="metadata">
+                  <source src="../assets/videos_web/jungleland-combat.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/jungleland-combat.mp4</div>
+              </div>
+              <div class="lab-content">
+                <span class="project-tag">Montage vidéo / Exercice scolaire</span>
+                <h3>Jungleland – Montage combat</h3>
+                <p>
+                  Exercice de montage axé sur une séquence de combat. Travail sur l’énergie, la tension, les impacts,
+                  les cuts, le rythme et la lisibilité de l’action.
+                </p>
+                <div class="skill-tags">
+                  <span>Montage action</span><span>Rythme</span><span>Tension</span><span>Cuts dynamiques</span>
+                  <span>Sound design</span>
+                </div>
+                <details class="process-details">
+                  <summary>Voir le processus</summary>
+                  <dl>
+                    <dt>Contexte</dt><dd>Exercice de montage d’action.</dd>
+                    <dt>Objectif</dt><dd>Créer tension et énergie sans perdre la lisibilité.</dd>
+                    <dt>Mon rôle</dt><dd>Montage, rythme, impacts et sound design.</dd>
+                    <dt>Processus</dt><dd>Repérage des impacts, cuts dynamiques, sons et ajustement du tempo.</dd>
+                    <dt>Ce que j’ai appris</dt><dd>Un montage d’action doit rester compréhensible malgré l’intensité.</dd>
+                    <dt>Fichiers / vidéos associées</dt><dd>assets/videos_web/jungleland-combat.mp4</dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+
+            <article class="lab-card reveal" data-categories="montage-video exercices-scolaires">
+              <div class="lab-media">
+                <video controls preload="metadata">
+                  <source src="../assets/videos_web/opera-paris.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/opera-paris.mp4</div>
+              </div>
+              <div class="lab-content">
+                <span class="project-tag">Montage vidéo / Exercice scolaire</span>
+                <h3>Opéra de Paris – Montage promotionnel</h3>
+                <p>
+                  Montage promotionnel réalisé à partir de rushes confiés par un professeur ayant travaillé sur la
+                  promotion de l’Opéra de Paris.
+                </p>
+                <div class="skill-tags">
+                  <span>Montage promotionnel</span><span>Dérushage</span><span>Rythme</span><span>Élégance visuelle</span>
+                  <span>Storytelling</span>
+                </div>
+                <details class="process-details">
+                  <summary>Voir le processus</summary>
+                  <dl>
+                    <dt>Contexte</dt><dd>Exercice promotionnel à partir d’images existantes.</dd>
+                    <dt>Objectif</dt><dd>Créer une vidéo élégante, rythmée et valorisante.</dd>
+                    <dt>Mon rôle</dt><dd>Dérushage, montage, rythme et construction de l’intention.</dd>
+                    <dt>Processus</dt><dd>Tri des images, choix musical, montage et finition premium.</dd>
+                    <dt>Ce que j’ai appris</dt><dd>Comment valoriser une institution par le rythme et le choix des plans.</dd>
+                    <dt>Fichiers / vidéos associées</dt><dd>assets/videos_web/opera-paris.mp4</dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+
+            <article class="lab-card reveal" data-categories="sound-design exercices-scolaires">
+              <div class="lab-media">
+                <video controls preload="metadata">
+                  <source src="../assets/videos_web/sound-design-jeu-guerre.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/sound-design-jeu-guerre.mp4</div>
+              </div>
+              <div class="lab-content">
+                <span class="project-tag">Sound Design / Exercice scolaire</span>
+                <h3>Recréation sonore d’un jeu de guerre</h3>
+                <p>
+                  Recréation complète de l’environnement sonore d’un jeu vidéo de guerre : ambiances, impacts, tirs,
+                  déplacements, tensions, bruitages et spatialisation.
+                </p>
+                <div class="skill-tags">
+                  <span>Sound design</span><span>Bruitage</span><span>Ambiance sonore</span><span>Montage audio</span>
+                  <span>Immersion</span><span>Rythme sonore</span>
+                </div>
+                <details class="process-details">
+                  <summary>Voir le processus</summary>
+                  <dl>
+                    <dt>Contexte</dt><dd>Exercice de recréation sonore complète.</dd>
+                    <dt>Objectif</dt><dd>Rendre l’action immersive uniquement par le son.</dd>
+                    <dt>Mon rôle</dt><dd>Choix des sons, montage audio, ambiance et impacts.</dd>
+                    <dt>Processus</dt><dd>Création des couches sonores, synchronisation, spatialisation et mixage.</dd>
+                    <dt>Ce que j’ai appris</dt><dd>Le son guide la perception de l’action autant que l’image.</dd>
+                    <dt>Fichiers / vidéos associées</dt><dd>assets/videos_web/sound-design-jeu-guerre.mp4</dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+
+            <article class="lab-card reveal" data-categories="projets-cinema creations-personnelles">
+              <div class="lab-media">
+                <video controls preload="metadata">
+                  <source src="../assets/videos_web/regards-du-congo.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/regards-du-congo.mp4</div>
+              </div>
+              <div class="lab-content">
+                <span class="project-tag">Projets cinéma / Création personnelle</span>
+                <h3>Regards du Congo</h3>
+                <p>
+                  Projet personnel écrit et pensé pour mettre en lumière le Congo, sa culture et son identité à travers
+                  une approche cinématographique.
+                </p>
+                <div class="skill-tags">
+                  <span>Écriture</span><span>Réalisation</span><span>Storytelling</span><span>Direction artistique</span>
+                  <span>Narration visuelle</span>
+                </div>
+                <details class="process-details">
+                  <summary>Voir le processus</summary>
+                  <dl>
+                    <dt>Contexte</dt><dd>Projet personnel autour de la culture et de l’identité congolaise.</dd>
+                    <dt>Objectif</dt><dd>Développer une narration visuelle forte et personnelle.</dd>
+                    <dt>Mon rôle</dt><dd>Écriture, intention de réalisation, storytelling et direction artistique.</dd>
+                    <dt>Processus</dt><dd>Recherche, écriture, réflexion visuelle et préparation de l’univers.</dd>
+                    <dt>Ce que j’ai appris</dt><dd>Comment relier mémoire, identité et langage cinématographique.</dd>
+                    <dt>Fichiers / vidéos associées</dt><dd>assets/videos_web/regards-du-congo.mp4</dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+
+            <article class="lab-card reveal" data-categories="creations-personnelles projets-cinema montage-video">
+              <div class="lab-media">
+                <video controls preload="metadata">
+                  <source src="../assets/videos_web/acting-storytelling.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/acting-storytelling.mp4</div>
+              </div>
+              <div class="lab-content">
+                <span class="project-tag">Créations personnelles</span>
+                <h3>Acting & storytelling</h3>
+                <p>
+                  Créations courtes publiées sur mes réseaux sociaux, centrées sur l’acting, l’émotion et la narration
+                  visuelle.
+                </p>
+                <div class="skill-tags">
+                  <span>Acting</span><span>Tournage</span><span>Montage</span><span>Mise en scène</span>
+                  <span>Storytelling</span><span>Réseaux sociaux</span>
+                </div>
+                <details class="process-details">
+                  <summary>Voir le processus</summary>
+                  <dl>
+                    <dt>Contexte</dt><dd>Créations personnelles pensées pour les réseaux sociaux.</dd>
+                    <dt>Objectif</dt><dd>Expérimenter le jeu, le cadrage, le montage et le sound design.</dd>
+                    <dt>Mon rôle</dt><dd>Acting, tournage, montage, mise en scène et publication.</dd>
+                    <dt>Processus</dt><dd>Idée, écriture courte, tournage, montage et adaptation verticale.</dd>
+                    <dt>Ce que j’ai appris</dt><dd>La régularité aide à affiner un univers personnel.</dd>
+                    <dt>Fichiers / vidéos associées</dt><dd>assets/videos_web/acting-storytelling.mp4</dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+
+            <article class="lab-card reveal" data-categories="creations-personnelles projets-cinema montage-video">
+              <div class="lab-media">
+                <video controls preload="metadata">
+                  <source src="../assets/videos_web/enora-hope-suicide.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/enora-hope-suicide.mp4</div>
+              </div>
+              <div class="lab-content">
+                <span class="project-tag">Créations personnelles / Acting / Storytelling</span>
+                <h3>Court-métrage inspiré d’Enora Hope</h3>
+                <p>
+                  Création d’une vidéo inspirée d’un court-métrage d’Enora Hope abordant le sujet du suicide. L’objectif
+                  était de recréer une atmosphère sensible et émotionnelle tout en travaillant l’acting, le rythme,
+                  l’intention et la mise en scène.
+                </p>
+                <div class="skill-tags">
+                  <span>Acting</span><span>Mise en scène</span><span>Montage émotionnel</span><span>Rythme</span>
+                  <span>Cadrage</span><span>Ambiance</span><span>Storytelling</span>
+                </div>
+                <details class="process-details">
+                  <summary>Voir le processus</summary>
+                  <dl>
+                    <dt>Contexte</dt>
+                    <dd>Projet inspiré d’un court-métrage émotionnel autour du suicide.</dd>
+                    <dt>Objectif</dt>
+                    <dd>Travailler une interprétation juste, sensible et respectueuse d’un sujet difficile.</dd>
+                    <dt>Mon rôle</dt>
+                    <dd>Acting, mise en scène, tournage, montage et ambiance sonore.</dd>
+                    <dt>Processus</dt>
+                    <dd>
+                      J’ai analysé l’émotion de la scène, travaillé le rythme, le regard, la respiration et le montage
+                      pour conserver une tension intime.
+                    </dd>
+                    <dt>Ce que ce projet montre de moi</dt>
+                    <dd>
+                      Ma capacité à traiter des sujets sensibles avec retenue, émotion et intention artistique.
+                    </dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+
+            <article class="lab-card reveal" data-categories="creations-personnelles projets-cinema">
+              <div class="lab-media">
+                <video controls preload="metadata">
+                  <source src="../assets/videos_web/yeux-ebene-scenario.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/yeux-ebene-scenario.mp4</div>
+              </div>
+              <div class="lab-content">
+                <span class="project-tag">Créations personnelles / Acting / Écriture</span>
+                <h3>Incrustation dans un scénario inspiré de Yeux Ébène</h3>
+                <p>
+                  Projet personnel inspiré d’un scénario écrit par Yeux Ébène afin de m’intégrer dans son univers
+                  narratif. L’objectif était de travailler l’interprétation, la continuité émotionnelle, le jeu face
+                  caméra et l’adaptation d’un texte existant à mon propre univers.
+                </p>
+                <div class="skill-tags">
+                  <span>Acting</span><span>Adaptation</span><span>Écriture</span><span>Direction d’acteur</span>
+                  <span>Narration</span><span>Montage</span>
+                </div>
+                <details class="process-details">
+                  <summary>Voir le processus</summary>
+                  <dl>
+                    <dt>Contexte</dt>
+                    <dd>Projet inspiré d’un scénario écrit par Yeux Ébène.</dd>
+                    <dt>Objectif</dt>
+                    <dd>M’intégrer dans un univers narratif existant tout en y apportant ma propre interprétation.</dd>
+                    <dt>Mon rôle</dt>
+                    <dd>Acting, adaptation, mise en scène, montage.</dd>
+                    <dt>Processus</dt>
+                    <dd>
+                      J’ai travaillé la continuité émotionnelle, le placement, le rythme et la cohérence avec l’ambiance
+                      du scénario.
+                    </dd>
+                    <dt>Ce que ce projet montre de moi</dt>
+                    <dd>
+                      Ma capacité à comprendre un univers d’auteur et à l’interpréter sans le dénaturer.
+                    </dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+
+            <article class="lab-card reveal" data-categories="creations-personnelles projets-cinema">
+              <div class="lab-media">
+                <video controls preload="metadata">
+                  <source src="../assets/videos_web/ginny-georgia-acting.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/ginny-georgia-acting.mp4</div>
+              </div>
+              <div class="lab-content">
+                <span class="project-tag">Créations personnelles / Acting / Cinéma</span>
+                <h3>Ginny & Georgia – Recréation d’atmosphère</h3>
+                <p>
+                  Vidéo d’acting inspirée de l’atmosphère de la série Ginny & Georgia, notamment la scène où Georgia
+                  découvre que sa fille Ginny s’automutile avec un briquet. J’ai voulu recréer la tension émotionnelle,
+                  la fragilité du moment et l’intensité dramatique à travers le jeu, le cadrage et le montage.
+                </p>
+                <div class="skill-tags">
+                  <span>Acting dramatique</span><span>Mise en scène</span><span>Ambiance</span>
+                  <span>Montage émotionnel</span><span>Lumière</span><span>Rythme</span>
+                </div>
+                <details class="process-details">
+                  <summary>Voir le processus</summary>
+                  <dl>
+                    <dt>Contexte</dt>
+                    <dd>Recréation d’une atmosphère dramatique inspirée de Ginny & Georgia.</dd>
+                    <dt>Objectif</dt>
+                    <dd>Faire ressentir la peur, la culpabilité et la douleur d’un moment familial intense.</dd>
+                    <dt>Mon rôle</dt>
+                    <dd>Acting, cadrage, lumière, montage, ambiance.</dd>
+                    <dt>Processus</dt>
+                    <dd>
+                      J’ai travaillé la tension du silence, les regards, la fragilité du personnage et le rythme du
+                      montage.
+                    </dd>
+                    <dt>Ce que ce projet montre de moi</dt>
+                    <dd>
+                      Ma capacité à recréer une atmosphère émotionnelle forte à partir d’une référence série.
+                    </dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+
+            <article class="lab-card reveal" data-categories="creations-personnelles sound-design projets-cinema">
+              <div class="lab-media">
+                <video controls preload="metadata">
+                  <source src="../assets/videos_web/american-horror-stories-bestie.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/american-horror-stories-bestie.mp4</div>
+              </div>
+              <div class="lab-content">
+                <span class="project-tag">Créations personnelles / Acting / Ambiance</span>
+                <h3>American Horror Stories – Bestie</h3>
+                <p>
+                  Recréation d’une atmosphère inspirée de la série American Horror Stories, saison 3 épisode 1, intitulé
+                  Bestie. J’ai repris l’idée du climat inquiétant de l’épisode tout en utilisant ma propre voix afin
+                  d’installer une tension proche de la vidéo originale, avec ma propre interprétation.
+                </p>
+                <div class="skill-tags">
+                  <span>Acting</span><span>Voix</span><span>Ambiance horrifique</span><span>Sound design</span>
+                  <span>Montage</span><span>Rythme</span><span>Tension</span>
+                </div>
+                <details class="process-details">
+                  <summary>Voir le processus</summary>
+                  <dl>
+                    <dt>Contexte</dt>
+                    <dd>
+                      Recréation d’un climat inquiétant inspiré de American Horror Stories saison 3 épisode 1, Bestie.
+                    </dd>
+                    <dt>Objectif</dt>
+                    <dd>Installer une tension progressive grâce à la voix, au montage et au sound design.</dd>
+                    <dt>Mon rôle</dt>
+                    <dd>Acting, voix, montage, sound design, ambiance.</dd>
+                    <dt>Processus</dt>
+                    <dd>
+                      J’ai utilisé ma propre voix pour recréer un climat proche de l’original, en travaillant le rythme,
+                      les silences et l’ambiance sonore.
+                    </dd>
+                    <dt>Ce que ce projet montre de moi</dt>
+                    <dd>Ma capacité à créer une ambiance et à utiliser la voix comme outil narratif.</dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+
+            <article class="lab-card reveal" data-categories="creations-personnelles projets-cinema">
+              <div class="lab-media">
+                <video controls preload="metadata">
+                  <source src="../assets/videos_web/la-crise-1993.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/la-crise-1993.mp4</div>
+              </div>
+              <div class="lab-content">
+                <span class="project-tag">Créations personnelles / Acting / Cinéma</span>
+                <h3>La Crise (1993) – Réinterprétation cinématographique</h3>
+                <p>
+                  Projet d’acting inspiré d’une scène du film français La Crise (1993), découverte à travers un extrait
+                  partagé sur le compte TikTok de Canal+. Ce projet est né de mon envie de recréer l’atmosphère, le
+                  rythme et l’intention de la scène originale tout en l’interprétant avec ma propre sensibilité.
+                </p>
+                <div class="skill-tags">
+                  <span>Acting</span><span>Analyse de scène</span><span>Narration</span><span>Mise en scène</span>
+                  <span>Direction artistique</span><span>Cadrage</span><span>Montage</span><span>Storytelling visuel</span>
+                </div>
+                <details class="process-details">
+                  <summary>Voir le processus</summary>
+                  <dl>
+                    <dt>Contexte</dt>
+                    <dd>
+                      J’ai découvert cette scène à travers un extrait publié par Canal+. J’ai immédiatement été marqué
+                      par l’écriture, le jeu des acteurs et la justesse émotionnelle du moment.
+                    </dd>
+                    <dt>Objectif</dt>
+                    <dd>
+                      Comprendre les mécanismes de la scène originale et tenter de les retranscrire à travers mon propre
+                      jeu, ma mise en scène et mon montage.
+                    </dd>
+                    <dt>Mon rôle</dt>
+                    <dd>Analyse de la scène, acting, mise en scène, tournage, cadrage, lumière et montage.</dd>
+                    <dt>Processus</dt>
+                    <dd>
+                      Avant le tournage, j’ai étudié les intentions des personnages, leur manière de parler, les
+                      silences, les regards et le rythme général de la séquence. Mon objectif n’était pas de copier
+                      exactement la scène, mais d’en retrouver l’émotion et l’authenticité tout en y apportant ma propre
+                      interprétation.
+                    </dd>
+                    <dt>Ce que ce projet montre de moi</dt>
+                    <dd>
+                      Ma capacité à analyser une œuvre cinématographique, comprendre les choix artistiques qui la rendent
+                      efficace et les réinterpréter à travers mon propre regard de créateur.
+                    </dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+
+            <article class="lab-card reveal" data-categories="creations-personnelles projets-cinema">
+              <div class="lab-media">
+                <video controls preload="metadata">
+                  <source src="../assets/videos_web/hotel-transylvanie.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/hotel-transylvanie.mp4</div>
+              </div>
+              <div class="lab-content">
+                <span class="project-tag">Créations personnelles / Acting / Direction artistique</span>
+                <h3>Hôtel Transylvanie – Réinterprétation visuelle</h3>
+                <p>
+                  Projet inspiré d’un edit découvert sur TikTok autour de l’univers d’Hôtel Transylvanie. J’ai souhaité
+                  transformer cet edit en véritable scène d’acting tout en recréant les ambiances lumineuses et
+                  l’esthétique caractéristique de l’univers du film.
+                </p>
+                <div class="skill-tags">
+                  <span>Direction artistique</span><span>Lumière</span><span>Acting</span><span>Mise en scène</span>
+                  <span>Montage</span><span>Storytelling visuel</span>
+                </div>
+                <details class="process-details">
+                  <summary>Voir le processus</summary>
+                  <dl>
+                    <dt>Contexte</dt>
+                    <dd>
+                      J’ai découvert un edit sur TikTok qui m’a donné envie d’explorer l’univers visuel d’Hôtel
+                      Transylvanie sous une autre forme.
+                    </dd>
+                    <dt>Objectif</dt>
+                    <dd>Créer une interprétation personnelle tout en conservant l’identité esthétique du film.</dd>
+                    <dt>Mon rôle</dt>
+                    <dd>Direction artistique, lumière, acting, tournage et montage.</dd>
+                    <dt>Processus</dt>
+                    <dd>
+                      Travail sur les couleurs, les contrastes, l’ambiance lumineuse et le jeu afin de retrouver
+                      l’esprit du film.
+                    </dd>
+                    <dt>Ce que ce projet montre de moi</dt>
+                    <dd>Ma sensibilité à l’image et ma capacité à utiliser la lumière comme outil narratif.</dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+
+            <article class="lab-card reveal" data-categories="creations-personnelles projets-cinema">
+              <div class="lab-media">
+                <video controls preload="metadata">
+                  <source src="../assets/videos_web/lamour-ouf-jackie.mp4" type="video/mp4" />
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+                <div class="video-placeholder">assets/videos_web/lamour-ouf-jackie.mp4</div>
+              </div>
+              <div class="lab-content">
+                <span class="project-tag">Créations personnelles / Acting / Cinéma</span>
+                <h3>L’Amour Ouf – Confession de Jackie</h3>
+                <p>
+                  Réinterprétation d’une scène de L’Amour Ouf dans laquelle Jackie devenue adulte se confie à son père
+                  et exprime les sentiments qu’elle éprouve encore pour Clotaire. Ce projet m’a permis de travailler
+                  l’émotion, la sincérité du jeu et la construction progressive d’une confession intime.
+                </p>
+                <div class="skill-tags">
+                  <span>Acting dramatique</span><span>Narration émotionnelle</span><span>Montage</span>
+                  <span>Rythme</span><span>Direction d’acteur</span>
+                </div>
+                <details class="process-details">
+                  <summary>Voir le processus</summary>
+                  <dl>
+                    <dt>Contexte</dt>
+                    <dd>Scène inspirée du film L’Amour Ouf.</dd>
+                    <dt>Objectif</dt>
+                    <dd>Recréer la sincérité émotionnelle du personnage et transmettre la profondeur de ses sentiments.</dd>
+                    <dt>Mon rôle</dt>
+                    <dd>Acting, mise en scène, tournage, montage et travail émotionnel.</dd>
+                    <dt>Processus</dt>
+                    <dd>
+                      Analyse du personnage, étude de la scène originale, travail sur les silences, le regard, les
+                      intentions et le rythme du montage.
+                    </dd>
+                    <dt>Ce que ce projet montre de moi</dt>
+                    <dd>
+                      Ma capacité à porter des scènes émotionnelles et à construire une progression dramatique crédible.
+                    </dd>
+                  </dl>
+                </details>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-contact section">
+        <div class="container contact-grid">
+          <div class="reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Envie de découvrir mon travail technique plus en détail </h2>
+            <p>Je peux présenter mon processus, mes fichiers de travail et mes choix de montage ou de motion design.</p>
+          </div>
+          <address class="contact-card reveal">
+            <a href="mailto:baptisteisman@gmail.com"><i class="fa-solid fa-envelope"></i>baptisteisman@gmail.com</a>
+            <a href="tel:+33784649289"><i class="fa-solid fa-phone"></i>07 84 64 92 89</a>
+            <a href="https://www.linkedin.com/in/jo%C3%ABl-gis-makosso-3a0509335" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-linkedin-in"></i>Joel Makosso
+            </a>
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <p>© 2026 Joël Makosso. Portfolio vidéo.</p>
+        <span>Création de contenu, cinéma, storytelling, montage vidéo et analyse audiovisuelle.</span>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/joel.actingss" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@joelactings" target="_blank" rel="noreferrer" aria-label="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a class="is-featured" href="https://youtube.com/@joel_actingssi=pTr36Lul8sRxcOHI" target="_blank" rel="noreferrer" aria-label="YouTube">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jo%C3%ABl-gis-makosso-3a0509335" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+      <a class="footer-top" href="../index.html#accueil">Retour au portfolio</a>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
