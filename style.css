@@ -2055,3 +2055,31 @@ h3 {
 .is-framed body {
   display: none;
 }
+
+/* Accessibilité SEO/UX : focus clavier lisible et respect des préférences système. */
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+}
+
+.btn:focus-visible,
+.site-nav a:focus-visible,
+.footer-socials a:focus-visible,
+.social-link:focus-visible,
+.filter-tabs button:focus-visible,
+.footer-top:focus-visible,
+.back-link:focus-visible {
+  border-radius: 8px;
+  box-shadow: 0 0 0 4px rgba(216, 183, 104, 0.18);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

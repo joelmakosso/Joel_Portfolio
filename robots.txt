@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://joel-portfolio-kou5.vercel.app/sitemap.xml
