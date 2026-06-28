@@ -185,20 +185,41 @@ document.querySelectorAll(".media-shell, .project-media, .case-hero-media, .case
 
 document.querySelectorAll("[data-filter-group]").forEach((group) => {
   const buttons = group.querySelectorAll("[data-filter]");
-  const items = document.querySelectorAll("[data-filter-items] [data-categories]");
+  const items = document.querySelectorAll("[data-filter-items] [data-category], [data-filter-items] [data-categories]");
+
+  function getItemCategories(item) {
+    return (item.dataset.category || item.dataset.categories || "")
+      .split(/\s+/)
+      .filter(Boolean);
+  }
+
+  function applyFilter(filter) {
+    items.forEach((item) => {
+      const categories = getItemCategories(item);
+      const shouldShow = filter === "all" || categories.includes(filter);
+
+      item.classList.toggle("is-hidden", !shouldShow);
+      item.hidden = !shouldShow;
+
+      if (shouldShow) {
+        item.style.removeProperty("display");
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
 
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
       const filter = button.dataset.filter;
 
       buttons.forEach((item) => item.classList.toggle("is-active", item === button));
-
-      items.forEach((item) => {
-        const categories = item.dataset.categories.split(" ");
-        item.classList.toggle("is-hidden", filter !== "all" && !categories.includes(filter));
-      });
+      applyFilter(filter);
     });
   });
+
+  const activeFilter = group.querySelector(".is-active")?.dataset.filter || "all";
+  applyFilter(activeFilter);
 });
 
 setHeaderState();
